@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique Homme</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <header>
+    <h1>Boutique Homme</h1>
+    <p class="menu-icon" onclick="toggleMenu()">☰</p>
+  </header>
+
+  <nav id="mobile-menu" class="mobile-menu">
+    <a href="./index.html">Accueil</a>
+    <div class="dropdown">
+      <a href="#" onclick="toggleSubMenu(event)">Tous les vêtements ▾</a>
+      <div class="submenu" id="submenu-tous">
+        <a href="./ensembles.html">Ensemble</a>
+        <a href="./haut.html">Haut</a>
+        <a href="./bas.html">Bas</a>
+        <a href="./chaussures.html">Chaussures</a>
+      </div>
+    </div>
+    <a href="./accessoires.html">Accessoires</a>
+  </nav>
+
+  <section class="one">
+    <img src="./chemise/en.jpg" alt="Image élégante">
+    <div class="on">
+      <h1>Style Elégant</h1>
+      <h4>Faites sensation avec nos tendances inspirées - vêtements élégants chic et accessoires incontournables</h4>
+    </div>
+  </section>
+
+  <main>
+    <marquee direction="right">
+      <h1>STYLE AUTHENTIQUE ÉLÉGANT QUI VOUS REND PLUS BEAU 🌴</h1>
+    </marquee>
+  </main>
+
+  <section class="ban">
+    <img src="./chemise/m.jpg" alt="image">
+    <div class="tban">
+      <h4>Vêtements chic</h4>
+      <a href="./accessoires.html" class="exp">Explorer maintenant</a>
+    </div>
+  </section>
+
+  <div class="contact">
+    <p id="contact" class="a"><b>Contactez-nous via WhatsApp :</b></p>
+    <a class="whatsapp" href="#">Discuter sur WhatsApp</a>
+  </div>
+
+  <footer>
+    <h1 class="brand">Chez Tunde</h1>
+    <p class="tagline">Tous vêtements d'Homme</p>
+    <h2>Suivez-nous</h2>
+   
+  <a href="https://www.instagram.com/tonprofil" target="_blank">
+    <i class="fab fa-instagram" style="color:#E4405F; font-size: 30px;"></i>
+  </a>
+  <a href="https://www.facebook.com/tonprofil" target="_blank">
+    <i class="fab fa-facebook" style="color:#1877F2; font-size: 30px;"></i>
+  </a>
+
+    <p class="legal">Mentions légales</p>
+    &copy; 2025 Boutique Homme - Tous droits réservés
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    function toggleSubMenu(event) {
+      event.preventDefault();
+      const submenu = document.getElementById('submenu-tous');
+      submenu.style.display = submenu.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+</body>
+</html>

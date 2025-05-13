@@ -1,0 +1,180 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+  }
+  
+  header {
+    background: #ccc;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .menu-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: white;
+    width: 100%;
+    border-top: 1px solid #ccc;
+  }
+  
+  .mobile-menu a {
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .mobile-menu a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .submenu {
+    display: none;
+    flex-direction: column;
+    background-color: #f9f9f9;
+  }
+  
+  .submenu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .submenu a:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .one {
+    position: relative;
+    text-align: center;
+  }
+  
+  .one img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .on {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    right: 5%;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .on h1 {
+    font-size: 36px;
+  }
+  
+  .on h4 {
+    font-size: 18px;
+  }
+  
+  .ban {
+    position: relative;
+  }
+  
+  .ban img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .tban {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .exp {
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+  }
+  
+  .contact {
+    padding: 40px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .whatsapp {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  footer {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .brand {
+    font-size: 24px;
+    font-style: italic;
+  }
+  
+  @media (max-width: 768px) {
+    .on h1 {
+      font-size: 24px;
+    }
+  
+    .on h4 {
+      font-size: 16px;
+    }
+  
+    .tban {
+      font-size: 14px;
+      top: 20%;
+    }
+  
+    .exp {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .menu-icon {
+      font-size: 24px;
+    }
+  
+    marquee h1 {
+      font-size: 18px;
+    }
+  }
+  
